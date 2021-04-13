@@ -1,0 +1,33 @@
+
+----
+Drill Down using Sets
+
+//_Scatter
+If Min([_Players at Age]) = 1 Then 1
+Elseif Min([_Players at Age]) = 2 Then Index()%Min([_Players at Age])+.5
+Elseif Min([_Players at Age]) = 4 Then Index()%Min([_Players at Age])-.5
+Elseif Min([_Players at Age]) = 5 Then Index()%Min([_Players at Age])-1
+Else Index()%Min([_Players at Age])
+End
+
+
+//_Players at Age
+{ FIXED [NBA Team], [Age] : COUNTD([Player]) }
+
+
+//_Team Player Age
+If [_set | NBA Team] Then Null Else [Age] End
+
+
+//_Underlying Player Age
+Sum(If [_set | NBA Team] Then [Age] End)
+
+
+
+
+----
+Quick Formulas
+
+//Population
+[Gdp (Usd)] / [GDP per capita (USD)]
+

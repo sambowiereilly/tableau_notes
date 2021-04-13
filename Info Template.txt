@@ -1,0 +1,23 @@
+-- Info Template:
+
+Icon: y ~ 10
+w, h ~ 45
+
+--------
+Vertical:
+y ~ 5
+h ~ 400
+inner padding ~ 5
+
+Welcome to this exploratory/executive summary dashboard.
+
+This dashboard aims to #tellstory #datasource
+
+Example insights available:
+• ##
+• ##
+
+For hints & tips on how to use each chart please see the chart title & sub headers. Why not try hovering different marks to see what new insights & detail you can discover?
+
+Colour Theme
+Supporting Resources (links)
